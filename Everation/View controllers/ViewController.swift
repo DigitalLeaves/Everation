@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // outlets
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    // data
+    var everitems = [EverItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
