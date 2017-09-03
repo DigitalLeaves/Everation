@@ -9,10 +9,13 @@
 import UIKit
 
 class TextCollectionViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var textLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    func configureWithText(_ text: String) {
+        textLabel.text = text
+    }
 }
